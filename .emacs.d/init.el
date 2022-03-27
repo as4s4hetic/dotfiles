@@ -23,6 +23,8 @@
  )
 (load-theme 'zenburn t)
 (menu-bar-mode -1)
+
+;; ORG MODE
 (with-eval-after-load 'org       
   (setq org-startup-indented t) ; Enable `org-indent-mode' by default
   (add-hook 'org-mode-hook #'visual-line-mode))

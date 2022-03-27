@@ -22,5 +22,8 @@
 ;; Message window font
 (set-font "-xos4-terminus-large-r-normal--14-140-72-72-c-80-iso8859-15")
 
+;; Balance frames
+(define-key *root-map* (kbd "B") "balance-frames")
+
 ;; register mouse click
 (setf *mouse-focus-policy* :click)
