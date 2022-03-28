@@ -1,5 +1,6 @@
 # dotfiles
 `git add -u` to only commit tracked files
+
 `xrdb .Xresources` to load xterm configs
 ## themes
 based off [this zenburn theme for emacs](https://github.com/bbatsov/zenburn-emacs)
