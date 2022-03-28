@@ -17,7 +17,7 @@ colors:
     cursor:  '#DCDCCC'
     
   normal:
-    black:   '#DCDCCC'
+    black:   '#3F3F3F'
     red:     '#CC9393'
     green:   '#7F9F7F'
     yellow:  '#F0DFAF'
