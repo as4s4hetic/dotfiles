@@ -5,24 +5,42 @@ XTerm.vt100.backarrowKey: false
 XTerm.ttyModes: erase ^?
 XTerm.fullscreen: never
 
-XTerm.vt100.foreground: #efefef
+XTerm.vt100.foreground: #dcdccc
 XTerm.vt100.background: #3f3f3f
 
+! thankyou to cqpx (https://gist.github.com/cqpx) for most colours
+
+! black 
 XTerm.vt100.color0: #3f3f3f
-XTerm.vt100.color1: #705050
-XTerm.vt100.color2: #60b48a
-XTerm.vt100.color3: #dfaf8f
-XTerm.vt100.color4: #506070
+! maroon
+XTerm.vt100.color1: #CC9393
+! green
+XTerm.vt100.color2: #7F9F7F
+! olive
+XTerm.vt100.color3: #f0dfaf
+! navy
+XTerm.vt100.color4: #8CD0D3
+! purple
 XTerm.vt100.color5: #dc8cc3
-XTerm.vt100.color6: #8cd0d3
+! teal
+XTerm.vt100.color6: #93e0e3
+! silver
 XTerm.vt100.color7: #dcdccc
-XTerm.vt100.color8: #709080
+! grey
+XTerm.vt100.color8: #000000
+! red
 XTerm.vt100.color9: #dca3a3
-XTerm.vt100.color10: #c3bf9f
+! lime
+XTerm.vt100.color10: #bfebbf
+! yellow
 XTerm.vt100.color11: #f0dfaf
-XTerm.vt100.color12: #94bff3
-XTerm.vt100.color13: #ec93d3
+! blue
+XTerm.vt100.color12: #8cd0d3
+! fuschia
+XTerm.vt100.color13: #dc8cc3
+! aqua
 XTerm.vt100.color14: #93e0e3
+! white
 XTerm.vt100.color15: #ffffff
 
 XTerm.vt100.faceName: DejaVu Sans Mono:style=Book:antialias=true
