@@ -15,19 +15,40 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(web-beautify htmlize graphql-mode markdown-mode yaml-mode yaml zenburn-theme)))
+   '(pdf-tools go-mode powershell jedi web-beautify htmlize graphql-mode markdown-mode yaml-mode yaml zenburn-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; PRETTY THINGS
 (load-theme 'zenburn t)
+(if (display-graphic-p)
+    (progn
+      (tool-bar-mode -1)
+      (scroll-bar-mode -1)))
 (menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
 
 ;; ORG MODE
 (with-eval-after-load 'org       
   (setq org-startup-indented t) ; Enable `org-indent-mode' by default
-  (add-hook 'org-mode-hook #'visual-line-mode))
+  (add-hook 'org-mode-hook #'visual-line-mode)
+  (setq org-babel-min-lines-for-block-output 0)) ; fix extra newline in github code blocks
+
+;; PYTHON MODE
+(setq inhibit-startup-screen t)
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
+
+;; PDF VIEW MODE
+(require 'pdf-tools)
+(add-to-list 'auto-mode-alist '("\\.pdf\\'" . pdf-view-mode))
+(add-hook 'pdf-view-mode-hook #'pdf-tools-enable-minor-modes)
+
+;; ANSI COLOURS
+(require 'ansi-color)
+(defun display-ansi-colors ()
+  (interactive)
+  (ansi-color-apply-on-region (point-min) (point-max)))
