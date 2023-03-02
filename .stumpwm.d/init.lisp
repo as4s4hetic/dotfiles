@@ -18,6 +18,9 @@
 (define-key *root-map* (kbd "b") "exec firefox")
 ;; Shell
 (define-key *root-map* (kbd "n") "exec")
+;; Alacritty
+(define-key *root-map* (kbd "c") "exec alacritty")
+(define-key *root-map* (kbd "C-c") "exec alacritty")
 
 ;; Message window font
 (set-font "-xos4-terminus-large-r-normal--14-140-72-72-c-80-iso8859-15")
