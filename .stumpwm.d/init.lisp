@@ -13,14 +13,16 @@
       (eval-command cmd t))))
 
 ;; Lock screen
-(define-key *root-map* (kbd "C-l") "exec xlock")
+(define-key *root-map* (kbd "C-l") "exec slock")
 ;; Firefox
 (define-key *root-map* (kbd "b") "exec firefox")
 ;; Shell
 (define-key *root-map* (kbd "n") "exec")
-;; Alacritty
-(define-key *root-map* (kbd "c") "exec alacritty")
-(define-key *root-map* (kbd "C-c") "exec alacritty")
+;; Scrot
+(define-key *root-map* (kbd "C-s") "exec slack")
+;; Scrot
+(define-key *root-map* (kbd "C-x") "exec flameshot gui")
+
 
 ;; Message window font
 (set-font "-xos4-terminus-large-r-normal--14-140-72-72-c-80-iso8859-15")
