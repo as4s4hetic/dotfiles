@@ -15,7 +15,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(pdf-tools go-mode powershell jedi web-beautify htmlize graphql-mode markdown-mode yaml-mode yaml zenburn-theme)))
+   '(org-beautify-theme babel typescript-mode pdf-tools go-mode powershell jedi web-beautify htmlize graphql-mode markdown-mode yaml-mode yaml zenburn-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -30,6 +30,11 @@
       (tool-bar-mode -1)
       (scroll-bar-mode -1)))
 (menu-bar-mode -1)
+(set-face-attribute 'default nil :height 120)
+
+;; MARKDOWN
+(add-hook 'markdown-mode-hook 'flyspell-mode)
+(add-hook 'markdown-mode-hook 'flyspell-buffer)
 
 ;; ORG MODE
 (with-eval-after-load 'org       
