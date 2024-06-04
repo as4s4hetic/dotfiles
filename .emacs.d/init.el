@@ -47,10 +47,10 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
-;; PDF VIEW MODE
-(require 'pdf-tools)
-(add-to-list 'auto-mode-alist '("\\.pdf\\'" . pdf-view-mode))
-(add-hook 'pdf-view-mode-hook #'pdf-tools-enable-minor-modes)
+;; ;; PDF VIEW MODE
+;; (require 'pdf-tools)
+;; (add-to-list 'auto-mode-alist '("\\.pdf\\'" . pdf-view-mode))
+;; (add-hook 'pdf-view-mode-hook #'pdf-tools-enable-minor-modes)
 
 ;; ANSI COLOURS
 (require 'ansi-color)

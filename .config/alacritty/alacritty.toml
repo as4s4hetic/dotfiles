@@ -1,0 +1,23 @@
+[colors.cursor]
+cursor = "#DCDCCC"
+text = "#3F3F3F"
+
+[colors.normal]
+black = "#3F3F3F"
+blue = "#8CD0D3"
+cyan = "#93E0E3"
+green = "#7F9F7F"
+magenta = "#DC8CC3"
+red = "#CC9393"
+white = "#DCDCCC"
+yellow = "#F0DFAF"
+
+[colors.primary]
+background = "#3F3F3F"
+foreground = "#DCDCCC"
+
+[env]
+TERM = "alacritty-direct"
+
+[font]
+size = 7.0
