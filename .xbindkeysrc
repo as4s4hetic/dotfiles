@@ -1,0 +1,7 @@
+# Increase screen brightness
+"brightnessctl s 1763+"
+    m:0x0 + c:233
+
+# Decrease screen brightness
+"brightnessctl s 1763-"
+    m:0x0 + c:232
